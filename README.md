@@ -2,6 +2,8 @@
 This is a template project helps gamedev who wish to implement retro DOS console feature in their game project.
 The project also enable developer to create custom command and accept args as parameters.
 
+![](./showcase.gif)
+
 # How to run
 Head to `Scenes/TerminalScene.unity` and Play.
 

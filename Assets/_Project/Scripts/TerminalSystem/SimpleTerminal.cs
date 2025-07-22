@@ -236,12 +236,8 @@ namespace TerminalSystem
                 fullText += "\n" + displayLines[i];
             }
             
-            // 添加输入行
-            if (!string.IsNullOrEmpty(currentInput))
-            {
-                fullText += currentInput;
-                fullText += GetCursorVisual();
-            }
+            var outputFullText = currentInput;
+            fullText += outputFullText.Insert(cursorPosition, GetCursorVisual());
 
             textMesh.text = fullText;
             
